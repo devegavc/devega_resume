@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar__logo">Val</div>
+        <button class="sidebar__toggle" id="sidebar-toggle">☰</button>
+        
+        <ul class="sidebar__list">
+            <li><a href="#home" class="sidebar__link active">Home</a></li>
+            <li><a href="#about" class="sidebar__link">About</a></li>
+            <li><a href="#hobbies" class="sidebar__link">Hobbies</a></li>
+            <li><a href="#videos" class="sidebar__link">Video Gallery</a></li>
+            <li><a href="#contact" class="sidebar__link">Contact</a></li>
+        </ul>
+    </aside>
+    
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Val Anthony C. De Vega</span><br>Web Developer</h1>
+                <div class="home__img">
+                    <img src="./img/profile.jpg" alt="Profile Image">
+                </div>
+                <a href="#contact" class="button">Contact Me</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            
+            <div class="about__container">
+                <div>
+                    <h2 class="about__subtitle">Who Am I?</h2>
+                  <p class="about__text">A 2nd year BSIT student from National University Lipa with a keen interest and practical exposure in the field of  Android  and Web Development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section class="hobbies section" id="hobbies">
+            <h2 class="section-title">Hobbies</h2>
+            
+            <div class="hobbies__container">
+                <div>
+                    <h2 class="hobbies__subtitle">My Interests</h2>
+                    <p class="hobbies__text">Here are some of my hobbies and interests outside of work.</p>
+                    
+                    <ul class="hobbies__list">
+                        <li>Photography</li>
+                        <li>Hiking</li>
+                        <li>Traveling</li>
+                        <li>Cooking</li>
+                        <li>Music</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Gallery Section -->
+        <section class="section" id="videos">
+            <h2 class="section-title">Video Gallery</h2>
+            
+            <div class="video-gallery">
+                <div class="video-gallery__container">
+                    <div class="video-gallery__item">
+                        <video controls class="video-gallery__video">
+                            <source src="./img/vid1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-time-display">
+                            <span class="current-time">0:00</span> / <span class="duration">0:16</span>
+                        </div>
+                        <div class="video-gallery__caption">
+                  
+                        </div>
+                    </div>
+                    
+                    <div class="video-gallery__item">
+                        <video controls class="video-gallery__video">
+                            <source src="./img/vid2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-time-display">
+                            <span class="current-time">0:00</span> / <span class="duration">0:11</span>
+                        </div>
+                        <div class="video-gallery__caption">
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="video-gallery__item">
+                        <video controls class="video-gallery__video">
+                            <source src="./img/vid5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-time-display">
+                            <span class="current-time">0:00</span> / <span class="duration">0:05</span>
+                        </div>
+                        <div class="video-gallery__caption">
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="video-gallery__item">
+                        <video controls class="video-gallery__video">
+                            <source src="./img/vid6.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-time-display">
+                            <span class="current-time">0:00</span> / <span class="duration">0:16</span>
+                        </div>
+                        <div class="video-gallery__caption">
+                            
+                 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-gallery__nav">
+                    <button class="video-gallery__arrow" id="prev-video">❮</button>
+                    <button class="video-gallery__arrow" id="next-video">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact__container">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea placeholder="Your Message" class="contact__input"></textarea>
+                    <input type="button" value="Send Message" class="contact__button button">
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/devega.valanthony/" class="footer__icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/val_devega/" class="footer__icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/devegavc" class="footer__icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+             <p>&#169; VAL 2021 copyright all right reserved</p>
+        </footer>
+    </div>
+
+
+
+
+    <script>
+        // Background animation
+        const canvas = document.getElementById('backgroundCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const particles = [];
+        const particleCount = 100;
+        
+        for (let i = 0; i < particleCount; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 3 + 1,
+                speedX: Math.random() * 1 - 0.5,
+                speedY: Math.random() * 1 - 0.5
+            });
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            for (let i = 0; i < particles.length; i++) {
+                const p = particles[i];
+                
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+                
+                p.x += p.speedX;
+                p.y += p.speedY;
+                
+                if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+            }
+            
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+        
+        // Sidebar toggle functionality
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const mainContent = document.getElementById('main-content');
+        
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('show-sidebar');
+        });
+        
+        // Close sidebar when clicking on a link (for mobile)
+        const sidebarLinks = document.querySelectorAll('.sidebar__link');
+        
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    sidebar.classList.remove('show-sidebar');
+                }
+            });
+        });
+        
+        // Update active link in sidebar when scrolling
+        const sections = document.querySelectorAll('section');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            sidebarLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Update canvas size on window resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Video gallery navigation
+        const videoGallery = document.querySelector('.video-gallery__container');
+        const prevBtn = document.getElementById('prev-video');
+        const nextBtn = document.getElementById('next-video');
+        
+        nextBtn.addEventListener('click', () => {
+            videoGallery.scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            videoGallery.scrollBy({
+                left: -300,
+                behavior: 'smooth'
+            });
+        });
+
+        // Video time display functionality
+        document.querySelectorAll('.video-gallery__video').forEach(video => {
+            // Update duration display when metadata is loaded
+            video.addEventListener('loadedmetadata', function() {
+                const durationDisplay = this.parentElement.querySelector('.duration');
+                durationDisplay.textContent = formatTime(this.duration);
+            });
+            
+            // Update current time during playback
+            video.addEventListener('timeupdate', function() {
+                const currentTimeDisplay = this.parentElement.querySelector('.current-time');
+                currentTimeDisplay.textContent = formatTime(this.currentTime);
+            });
+        });
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+            return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        }
+    </script>
+</body>
+</html>
